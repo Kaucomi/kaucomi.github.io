@@ -13,7 +13,7 @@
     :root {
       --bg: #050505;
       --white: #111111;
-      --border: #262626;
+      --border: #050505;;
       --text: #f5f5f5;
       --muted: #b3b3b3;
       --subtle: #7a7a7a;
@@ -554,6 +554,7 @@
         <li><a href="#competences">Compétences</a></li>
         <li><a href="#projets">Projets</a></li>
         <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#cv">CV</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -564,8 +565,8 @@
     <!-- HERO -->
     <div class="hero">
       <div class="hero-left">
-        <div class="hero-tag">Disponible — alternance / stage</div>
-        <h1>Administrateur<br>Systèmes & Réseaux</h1>
+        <div class="hero-tag">Recherche — alternance</div>
+        <h1>Technicien<br>Systèmes et Réseaux</h1>
         <p class="hero-subtitle">
           Étudiant en BTS SIO option SISR, je me spécialise en infrastructure réseau, administration système et cybersécurité.
         </p>
@@ -582,7 +583,7 @@
           </div>
           <div class="info-row">
             <span class="info-label">Promotion</span>
-            <span class="info-val">2023 — 2025</span>
+            <span class="info-val">2023 — 2026</span>
           </div>
           <div class="info-row">
             <span class="info-label">Localisation</span>
@@ -618,7 +619,6 @@
             <span class="tag">DMZ</span>
             <span class="tag">VPN</span>
             <span class="tag">Stormshield</span>
-            <span class="tag">GNS3</span>
           </div>
         </div>
         <div class="skill-block">
@@ -642,19 +642,8 @@
             <span class="tag">Zabbix</span>
             <span class="tag">Centreon</span>
             <span class="tag">GLPI</span>
-            <span class="tag">FusionInventory</span>
+            <span class="tag">Cacti</span>
             <span class="tag">SNMP</span>
-          </div>
-        </div>
-        <div class="skill-block">
-          <div class="skill-icon">🔒</div>
-          <h3>Cybersécurité</h3>
-          <p>Analyse des risques et conformité réglementaire.</p>
-          <div class="tags">
-            <span class="tag">RGPD</span>
-            <span class="tag">ISO 27001</span>
-            <span class="tag">ANSSI</span>
-            <span class="tag">SANS</span>
           </div>
         </div>
         <div class="skill-block">
@@ -664,7 +653,7 @@
           <div class="tags">
             <span class="tag">PowerShell</span>
             <span class="tag">Bash</span>
-            <span class="tag">Python</span>
+            <span class="tag">Perl</span>
           </div>
         </div>
         <div class="skill-block">
@@ -674,7 +663,8 @@
           <div class="tags">
             <span class="tag">VMware</span>
             <span class="tag">VirtualBox</span>
-            <span class="tag">Hyper-V</span>
+            <span class="tag">Proxmox</span>
+            <span class="tag">GNS3</span>
           </div>
         </div>
       </div>
@@ -694,12 +684,14 @@
             <span class="project-num">Projet 01</span>
             <span class="badge badge-done">Terminé</span>
           </div>
-          <h3>Infrastructure Active Directory — Groupe GSB</h3>
-          <p>Déploiement d'une infrastructure AD multi-sites pour un groupe pharmaceutique fictif : contrôleurs de domaine redondants, GPO de sécurité, DFS, DNS/DHCP centralisé. Topologie modélisée sous GNS3.</p>
+          <h3>Infrastructure Active Directory - GLPI</h3>
+          <p>Déploiement d'une infrastructure AD multi-sites : contrôleurs de domaine redondants, GPO de sécurité, DFS, DNS/DHCP centralisé. Mise en place d’une solution GLPI reliée à l’annuaire LDAP afin de centraliser la gestion du parc informatique et des utilisateurs.</p>
           <div class="tags" style="margin-top:1rem">
             <span class="tag">Active Directory</span>
             <span class="tag">GPO</span>
             <span class="tag">DFS</span>
+            <span class="tag">PowerShell</span>
+            <span class="tag">Bash</span>
             <span class="tag">GNS3</span>
           </div>
         </div>
@@ -709,10 +701,10 @@
             <span class="project-num">Projet 02</span>
             <span class="badge badge-done">Terminé</span>
           </div>
-          <h3>Supervision réseau avec Zabbix</h3>
-          <p>Mise en place d'une solution de monitoring : déploiement Zabbix, agents SNMP sur équipements réseau, dashboards personnalisés et alertes automatisées sur les services critiques.</p>
+          <h3>Supervision réseau avec Centreon</h3>
+          <p>Mise en place d'une solution de monitoring : déploiement de Centreon, agents SNMP sur équipements réseau, alertes automatisées sur les services critiques.</p>
           <div class="tags" style="margin-top:1rem">
-            <span class="tag">Zabbix</span>
+            <span class="tag">Centreon</span>
             <span class="tag">SNMP</span>
             <span class="tag">Linux</span>
             <span class="tag">Bash</span>
@@ -724,28 +716,24 @@
             <span class="project-num">Projet 03</span>
             <span class="badge badge-done">Terminé</span>
           </div>
-          <h3>Gestion de parc avec GLPI</h3>
-          <p>Déploiement de GLPI + FusionInventory pour l'inventaire automatique du parc, gestion des tickets, des actifs et liaison avec l'annuaire LDAP/Active Directory.</p>
+          <h3>Automatisation d’un affichage dynamique avec Perl</h3>
+          <p>Dans le cadre de mon stage, j’ai travaillé sur l’automatisation d’un affichage dynamique sur télévision à l’aide de Perl. Cette solution permettait de générer et d’actualiser automatiquement les informations affichées, afin de diffuser du contenu de manière continue sans intervention manuelle.</p>
           <div class="tags" style="margin-top:1rem">
-            <span class="tag">GLPI</span>
-            <span class="tag">FusionInventory</span>
-            <span class="tag">LDAP</span>
-            <span class="tag">MySQL</span>
+            <span class="tag">Perl</span>
+            <span class="tag">Crontab</span>
           </div>
         </div>
-
         <div class="project-card">
           <div class="project-header">
             <span class="project-num">Projet 04</span>
             <span class="badge badge-done">Terminé</span>
           </div>
-          <h3>Segmentation réseau — VLAN & DMZ</h3>
-          <p>Architecture segmentée avec VLAN (administration, production, invités), DMZ pour l'exposition sécurisée de services web, règles pare-feu Stormshield et routage OSPF inter-VLAN.</p>
+          <h3>SSH Handler en Bash</h3>
+          <p>Développement d’un script Bash permettant d’ouvrir automatiquement une connexion SSH vers un équipement réseau depuis son adresse IP dans l’inventaire informatique de l’entreprise, sans saisie manuelle du mot de passe.</p>
           <div class="tags" style="margin-top:1rem">
-            <span class="tag">VLAN</span>
-            <span class="tag">OSPF</span>
-            <span class="tag">DMZ</span>
-            <span class="tag">Stormshield</span>
+            <span class="tag">Bash</span>
+            <span class="tag">Automatisation</span>
+            <span class="tag">SSH</span>
           </div>
         </div>
 
@@ -761,24 +749,17 @@
 
       <div class="timeline">
         <div class="tl-item">
-          <span class="tl-date">2023 — 2025</span>
+          <span class="tl-date">2023 — 2026</span>
           <div class="tl-content">
             <h3>BTS SIO option SISR</h3>
             <p>Formation en systèmes d'information et infrastructures réseaux. Spécialisation en administration système, cybersécurité et réseaux d'entreprise.</p>
           </div>
         </div>
         <div class="tl-item">
-          <span class="tl-date">2023</span>
+          <span class="tl-date">2020-2023</span>
           <div class="tl-content">
-            <h3>Baccalauréat STI2D / général</h3>
-            <p>Obtention du baccalauréat, filière technologique ou générale.</p>
-          </div>
-        </div>
-        <div class="tl-item">
-          <span class="tl-date">Stage 2024</span>
-          <div class="tl-content">
-            <h3>Stage en entreprise</h3>
-            <p>Administration système et réseau en environnement professionnel. À compléter avec ta vraie expérience de stage.</p>
+            <h3>Baccalauréat Professionnel Système Numérique Option RISC</h3>
+            <p>Obtention du baccalauréat, Mention Bien.</p>
           </div>
         </div>
       </div>
@@ -794,14 +775,14 @@
       <div class="about-grid">
         <div class="about-block span2">
           <h3>Présentation</h3>
-          <p>Passionné par l'administration des systèmes et des réseaux, j'aime comprendre les infrastructures de bout en bout — de la configuration réseau à l'automatisation par script. Mon BTS SIO SISR m'a permis de travailler sur des projets concrets : déploiement d'Active Directory, supervision avec Zabbix, segmentation réseau sous GNS3. Je recherche une opportunité pour mettre ces compétences en pratique en entreprise.</p>
+          <p>Ce qui me plaît dans l’informatique, c’est de comprendre comment les systèmes communiquent entre eux et de trouver des solutions lorsqu’un problème apparaît. Mon parcours en BTS SIO option SISR m’a permis de travailler sur des projets concrets sous GNS3. Ces expériences m’ont donné envie de continuer dans l’administration systèmes et réseaux, tout en progressant sur la cybersécurité et les infrastructures d’entreprise.</p>
         </div>
         <div class="about-block">
           <h3>Formation</h3>
           <div class="kv-list">
             <div class="kv-item"><span class="k">Diplôme</span><span class="v">BTS SIO SISR</span></div>
             <div class="kv-item"><span class="k">Option</span><span class="v">Systèmes & Réseaux</span></div>
-            <div class="kv-item"><span class="k">Promotion</span><span class="v">2023 — 2025</span></div>
+            <div class="kv-item"><span class="k">Promotion</span><span class="v">2023 — 2026</span></div>
           </div>
         </div>
         <div class="about-block">
@@ -815,6 +796,27 @@
       </div>
     </div>
 
+
+    <!-- CV -->
+<div class="section" id="cv">
+  <div class="section-head">
+    <h2>CV</h2>
+    <span class="section-num">05</span>
+  </div>
+
+  <div class="about-block span2">
+    <h3>CV</h3>
+    <div class="hero-cta" style="margin-top: 1.5rem;">
+      <a href="cv-hugo-sanchez.pdf" class="btn btn-primary" target="_blank">
+          Voir mon CV
+      </a>
+      <a href="cv-hugo-sanchez.pdf" class="btn btn-outline" download>
+        Télécharger le CV
+      </a>
+    </div>
+  </div>
+</div>
+
     <!-- CONTACT -->
     <div class="section" id="contact">
       <div class="section-head">
@@ -824,33 +826,14 @@
 
       <div class="contact-grid">
 
-        <a href="https://github.com/Kaucomi" class="contact-card" target="_blank" rel="noopener">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
-          </div>
-          <div class="contact-info">
-            <small>GitHub</small>
-            <strong>Kaucomi</strong>
-          </div>
-        </a>
 
-        <a href="mailto:votre.email@example.com" class="contact-card">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          </div>
-          <div class="contact-info">
-            <small>Email</small>
-            <strong>votre.email@example.com</strong>
-          </div>
-        </a>
-
-        <a href="https://linkedin.com/in/" class="contact-card" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/in/hugo-sanchez-hs34000" class="contact-card" target="_blank" rel="noopener">
           <div class="contact-icon">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           </div>
           <div class="contact-info">
             <small>LinkedIn</small>
-            <strong>Ton profil</strong>
+            <strong>Mon LinkedIn</strong>
           </div>
         </a>
 
