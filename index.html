@@ -319,6 +319,21 @@
       flex-direction: column;
     }
 
+    .project-links {
+      margin-top: auto;
+      padding-top: 1.5rem;
+    }
+    .project-links .btn {
+      background: #3b82f6;
+      color: #ffffff;
+      border-color: #383b42;
+    }
+
+    .project-links .btn:hover {
+      background: #4f92fd;
+      border-color: #4f92fd;
+    }
+
     .project-card:hover {
       border-color: #525252;
       box-shadow: 0 2px 18px rgba(0,0,0,0.45);
@@ -568,7 +583,7 @@
         <div class="hero-tag">Recherche — alternance</div>
         <h1>Technicien<br>Systèmes et Réseaux</h1>
         <p class="hero-subtitle">
-          Étudiant en BTS SIO option SISR, je me spécialise en infrastructure réseau, administration système et cybersécurité.
+          Étudiant en BTS SIO option SISR, je me spécialise en infrastructure réseau, administration système et réseaux et la cybersécurité.
         </p>
         <div class="hero-cta">
           <a href="#projets" class="btn btn-primary">Voir mes projets</a>
@@ -617,8 +632,12 @@
             <span class="tag">VLAN</span>
             <span class="tag">OSPF</span>
             <span class="tag">DMZ</span>
-            <span class="tag">VPN</span>
+            <span class="tag">VRRP</span>
+            <span class="tag">FHRP</span>
+            <span class="tag">HA</span>
+            <span class="tag">SNMP</span>
             <span class="tag">Stormshield</span>
+            <span class="tag">VPN</span>
           </div>
         </div>
         <div class="skill-block">
@@ -643,7 +662,6 @@
             <span class="tag">Centreon</span>
             <span class="tag">GLPI</span>
             <span class="tag">Cacti</span>
-            <span class="tag">SNMP</span>
           </div>
         </div>
         <div class="skill-block">
@@ -665,80 +683,126 @@
             <span class="tag">VirtualBox</span>
             <span class="tag">Proxmox</span>
             <span class="tag">GNS3</span>
+            <span class="tag">Cisco Packet Tracer</span>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- PROJETS -->
-    <div class="section" id="projets">
-      <div class="section-head">
-        <h2>Projets</h2>
-        <span class="section-num">02</span>
+<!-- PROJETS -->
+<div class="section" id="projets">
+  <div class="section-head">
+    <h2>Projets</h2>
+    <span class="section-num">02</span>
+  </div>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-num">Projet 01</span>
+        <span class="badge badge-done">Terminé</span>
       </div>
 
-      <div class="projects-grid">
+      <h3>Projet - Cours</h3>
+      <h3>Infrastructure Active Directory - GLPI</h3>
 
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-num">Projet 01</span>
-            <span class="badge badge-done">Terminé</span>
-          </div>
-          <h3>Infrastructure Active Directory - GLPI</h3>
-          <p>Déploiement d'une infrastructure AD multi-sites : contrôleurs de domaine redondants, GPO de sécurité, DFS, DNS/DHCP centralisé. Mise en place d’une solution GLPI reliée à l’annuaire LDAP afin de centraliser la gestion du parc informatique et des utilisateurs.</p>
-          <div class="tags" style="margin-top:1rem">
-            <span class="tag">Active Directory</span>
-            <span class="tag">GPO</span>
-            <span class="tag">DFS</span>
-            <span class="tag">PowerShell</span>
-            <span class="tag">Bash</span>
-            <span class="tag">GNS3</span>
-          </div>
-        </div>
+      <p>
+        Déploiement d'une infrastructure AD multi-sites : contrôleurs de domaine redondants,
+        GPO de sécurité, DFS, DNS/DHCP centralisé. Mise en place d’une solution GLPI reliée
+        à l’annuaire LDAP afin de centraliser la gestion du parc informatique et des utilisateurs.
+      </p>
 
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-num">Projet 02</span>
-            <span class="badge badge-done">Terminé</span>
-          </div>
-          <h3>Supervision réseau avec Centreon</h3>
-          <p>Mise en place d'une solution de monitoring : déploiement de Centreon, agents SNMP sur équipements réseau, alertes automatisées sur les services critiques.</p>
-          <div class="tags" style="margin-top:1rem">
-            <span class="tag">Centreon</span>
-            <span class="tag">SNMP</span>
-            <span class="tag">Linux</span>
-            <span class="tag">Bash</span>
-          </div>
-        </div>
+      <div class="tags" style="margin-top:1rem">
+        <span class="tag">Active Directory</span>
+        <span class="tag">GPO</span>
+        <span class="tag">DFS</span>
+        <span class="tag">PowerShell</span>
+        <span class="tag">Bash</span>
+        <span class="tag">GNS3</span>
+      </div>
 
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-num">Projet 03</span>
-            <span class="badge badge-done">Terminé</span>
-          </div>
-          <h3>Automatisation d’un affichage dynamique avec Perl</h3>
-          <p>Dans le cadre de mon stage, j’ai travaillé sur l’automatisation d’un affichage dynamique sur télévision à l’aide de Perl. Cette solution permettait de générer et d’actualiser automatiquement les informations affichées, afin de diffuser du contenu de manière continue sans intervention manuelle.</p>
-          <div class="tags" style="margin-top:1rem">
-            <span class="tag">Perl</span>
-            <span class="tag">Crontab</span>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-num">Projet 04</span>
-            <span class="badge badge-done">Terminé</span>
-          </div>
-          <h3>SSH Handler en Bash</h3>
-          <p>Développement d’un script Bash permettant d’ouvrir automatiquement une connexion SSH vers un équipement réseau depuis son adresse IP dans l’inventaire informatique de l’entreprise, sans saisie manuelle du mot de passe.</p>
-          <div class="tags" style="margin-top:1rem">
-            <span class="tag">Bash</span>
-            <span class="tag">Automatisation</span>
-            <span class="tag">SSH</span>
-          </div>
-        </div>
-
+      <div class="project-links">
+        <a href="./doc-ad-glpi.pdf" class="btn btn-outline" target="_blank">
+          Voir la documentation
+        </a>
       </div>
     </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-num">Projet 02</span>
+        <span class="badge badge-done">Terminé</span>
+      </div>
+
+      <h3>Projet - Cours</h3>
+      <h3>Supervision réseau avec Centreon</h3>
+
+      <p>
+        Mise en place d'une solution de monitoring : déploiement de Centreon,
+        agents SNMP sur équipements réseau, alertes automatisées sur les services critiques.
+      </p>
+
+      <div class="tags" style="margin-top:1rem">
+        <span class="tag">Centreon</span>
+        <span class="tag">SNMP</span>
+        <span class="tag">Linux</span>
+        <span class="tag">Bash</span>
+      </div>
+
+      <div class="project-links">
+        <a href="./doc-centreon.pdf" class="btn btn-outline" target="_blank">
+          Voir la documentation
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-num">Projet 03</span>
+        <span class="badge badge-done">Terminé</span>
+      </div>
+
+      <h3>Projet - Stage</h3>
+      <h3>Automatisation d’un affichage dynamique avec Perl</h3>
+
+      <p>
+        Dans le cadre de mon stage, j’ai travaillé sur l’automatisation d’un affichage dynamique
+        sur télévision à l’aide de Perl. Cette solution permettait de générer et d’actualiser
+        automatiquement les informations affichées, afin de diffuser du contenu de manière continue
+        sans intervention manuelle.
+      </p>
+
+      <div class="tags" style="margin-top:1rem">
+        <span class="tag">Perl</span>
+        <span class="tag">Crontab</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-num">Projet 04</span>
+        <span class="badge badge-done">Terminé</span>
+      </div>
+
+      <h3>Projet - Stage</h3>
+      <h3>SSH Handler en Bash</h3>
+
+      <p>
+        Développement d’un script Bash permettant d’ouvrir automatiquement une connexion SSH vers
+        un équipement réseau depuis son adresse IP dans l’inventaire informatique de l’entreprise,
+        sans saisie manuelle du mot de passe.
+      </p>
+
+      <div class="tags" style="margin-top:1rem">
+        <span class="tag">Bash</span>
+        <span class="tag">Automatisation</span>
+        <span class="tag">SSH</span>
+      </div>
+  </div>
+</div>
+
+
 
     <!-- PARCOURS -->
     <div class="section" id="parcours">
@@ -788,7 +852,7 @@
         <div class="about-block">
           <h3>Informations</h3>
           <div class="kv-list">
-            <div class="kv-item"><span class="k">Localisation</span><span class="v">Occitanie</span></div>
+            <div class="kv-item"><span class="k">Localisation</span><span class="v">Montpellier</span></div>
             <div class="kv-item"><span class="k">Statut</span><span class="v">Étudiant</span></div>
             <div class="kv-item"><span class="k">Langues</span><span class="v">Français · Anglais</span></div>
           </div>
@@ -807,10 +871,10 @@
   <div class="about-block span2">
     <h3>CV</h3>
     <div class="hero-cta" style="margin-top: 1.5rem;">
-      <a href="./cv-hugo-sanchez.pdf" class="btn btn-primary" target="_blank">
-        Voir mon CV
+      <a href="cv-hugo-sanchez.pdf" class="btn btn-primary" target="_blank">
+          Voir mon CV
       </a>
-      <a href="./cv-hugo-sanchez.pdf" class="btn btn-outline" download>
+      <a href="cv-hugo-sanchez.pdf" class="btn btn-outline" download>
         Télécharger le CV
       </a>
     </div>
